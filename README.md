@@ -1,11 +1,11 @@
 <a name="top"></a>
 # Project-pios
-安卓和苹果结合的简单操作系统。 [切换到英文介绍](https://github.com/AccessRetrieved/project-pios/blob/main/English_readme.md)
+安卓和苹果结合的简单操作系统。 [切换到英文介绍](https://github.com/Project-Pios/Project-Pios/blob/main/English_readme.md)
 
 ## 目录
 <details open="open">
     <summary>目录</summary>
-      1. [Project-Pios百科](https://github.com/AccessRetrieved/Project-Pios/wiki)
+      1. [Project-Pios百科](https://github.com/Project-Pios/Project-Pios/wiki)
       2. [下载和运行](#install)
       3. [已知问题](#bugs)
       4. [语言](#language)
@@ -30,7 +30,7 @@
 3. 运行以下载(复制粘贴简单些)：`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 4. 运行：`brew install blueutil`
 5. 运行：`cd Desktop`
-6. 运行：`git clone https://github.com/AccessRetrieved/Project-Pios`
+6. 运行：`git clone https://github.com/Project-Pios/Project-Pios`
 7. 运行：`cd Project-Pios`
 8. 运行： `pip3 install -r r.txt` - 如果出错，运行`pip install -r r.txt`
 9. 运行：`mv project_pios ..`
@@ -41,7 +41,7 @@
 
 <a name="bugs"></a>
 ## 已知问题
-1. [查看](https://github.com/AccessRetrieved/Project-Pios/blob/main/dlib_error_solution.md)dlib下载问题解决方案
+1. [查看](https://github.com/Project-Pios/Project-Pios/blob/main/dlib_error_solution.md)dlib下载问题解决方案
 2. 面容识别暂时只支持中文
 3. ~~给深色模式添加图片~~
 

@@ -1,11 +1,11 @@
 <a name="top"></a>
 # Project-pios
-Operating system with python. [Switch to Chinese Readme](https://github.com/AccessRetrieved/project-pios/blob/main/README.md)
+Operating system with python. [Switch to Chinese Readme](https://github.com/Project-Pios/Project-Pios/blob/main/README.md)
 
 ## Table of contents
 <details open="open">
     <summary>Table of Contents</summary>
-      1. [Project-Pios Wiki](https://github.com/AccessRetrieved/Project-Pios/wiki)
+      1. [Project-Pios Wiki](https://github.com/Project-Pios/Project-Pios/wiki)
       2. [Installing and executing](#install)
       3. [Known Bugs](#bugs)
       4. ['Language'](#language)
@@ -30,7 +30,7 @@ PC Users is not supported and will not be.
 3. Run to install homebrew(Copy paste is easier): `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 4. Run:`brew install blueutil`
 5. Run: `cd Desktop`
-6. Run:`git clone https://github.com/AccessRetrieved/Project-Pios`
+6. Run:`git clone https://github.com/Project-Pios/Project-Pios`
 7. Run:`cd Project-Pios`
 8. Run: `pip3 install -r r.txt` - if errors are generated than run，`pip install -r r.txt`
 9. Run: `mv project_pios ..`
@@ -41,7 +41,7 @@ PC Users is not supported and will not be.
 
 <a name="bugs"></a>
 ## Known Bugs
-1. [See](https://github.com/AccessRetrieved/Project-Pios/blob/main/dlib_error_solution.md) Dlib installation error solution
+1. [See](https://github.com/Project-Pios/Project-Pios/blob/main/dlib_error_solution.md) Dlib installation error solution
 2. Face Recognition temporary supports chinese only
 3. ~~Images and icons for dark mode~~
 
