@@ -1866,7 +1866,7 @@ def email(event):
 
 def check_update():
     global NSUpdateAlert
-    url = 'https://raw.githubusercontent.com/AccessRetrieved/project-pios/main/version.txt'
+    url = 'https://raw.githubusercontent.com/Project-Pios/Project-Pios/main/version.txt'
     response_version = requests.get(url).content
     version = response_version.decode('utf-8').replace('\n', '')
     NSVersion = StringVar()
