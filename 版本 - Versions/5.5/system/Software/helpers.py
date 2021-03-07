@@ -5,7 +5,7 @@ from tkinter.messagebox import *
 
 def download_ocr():
     if os.path.exists(os.getcwd() + '/project_pios/system/Library/Helpers') == True:
-        call('git clone https://github.com/AccessRetrieved/OCR', cwd=os.getcwd() + '/project_pios/system/Library/Helpers', shell=True)
+        call('git clone https://github.com/Project-Pios/OCR', cwd=os.getcwd() + '/project_pios/system/Library/Helpers', shell=True)
         if os.path.exists(os.getcwd() + '/project_pios/system/Library/Helpers/OCR') == True:
             ask = askyesno(message='成功，运行?')
             if ask == True:
@@ -16,7 +16,7 @@ def download_ocr():
             showerror(message='下载出错，请稍后重试')
     else:
         os.mkdir(os.getcwd() + '/project_pios/system/Library/Helpers')
-        call('git clone https://github.com/AccessRetrieved/OCR', cwd=os.getcwd() + '/project_pios/system/Library/Helpers', shell=True)
+        call('git clone https://github.com/Project-Pios/OCR', cwd=os.getcwd() + '/project_pios/system/Library/Helpers', shell=True)
         if os.path.exists(os.getcwd() + '/project_pios/system/Library/Helpers/OCR') == True:
             ask = askyesno(message='成功，运行?')
             if ask == True:
@@ -28,7 +28,7 @@ def download_ocr():
 
 def download_qrcode():
     if os.path.exists(os.getcwd() + '/project_pios/system/Library/Helpers') == True:
-        call('git clone https://github.com/AccessRetrieved/Qr-Code-Scanner', cwd=os.getcwd() + '/project_pios/system/Library/Helpers', shell=True)
+        call('git clone https://github.com/Project-Pios/Qr-Code-Scanner', cwd=os.getcwd() + '/project_pios/system/Library/Helpers', shell=True)
         if os.path.exists(os.getcwd() + '/project_pios/system/Library/Helpers/Qr-Code-Scanner') == True:
             ask = askyesno(message='成功， 运行？')
             if ask == True:
@@ -39,7 +39,7 @@ def download_qrcode():
             showerror(message='下载出错，请稍后重试')
     else:
         os.mkdir(os.getcwd() + '/project_pios/system/Library/Helpers')
-        call('git clone https://github.com/AccessRetrieved/Qr-Code-Scanner', cwd=os.getcwd() + '/project_pios/system/Library/Helpers', shell=True)
+        call('git clone https://github.com/Project-Pios/Qr-Code-Scanner', cwd=os.getcwd() + '/project_pios/system/Library/Helpers', shell=True)
         if os.path.exists(os.getcwd() + '/project_pios/system/Library/Helpers/Qr-Code-Scanner') == True:
             ask = askyesno(message='成功， 运行？')
             if ask == True:
