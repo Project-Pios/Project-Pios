@@ -35,9 +35,12 @@ from system.Software.pios_keyboard import show
 from App1.app import import_app, quit_app # Add custom app here
 from App2.app2 import import_app2, quit_app2 # Add second custom app here
 from config import *
+import random
+import string
 import objc
 
 # change all path from "/FILE" to "/FILE" for github
+# In settings and friends app change name to getuser()
 
 # Custom App Icons
 NSCustomAppIcon1 = os.getcwd() + '/app1.png'
@@ -62,7 +65,7 @@ NSLocalVersion = StringVar()                  #
 #                                             #
 # U P D A T E   T H I S   E V E R Y T I M E ! #
 #                                             #
-NSLocalVersion.set('5.4')                     #
+NSLocalVersion.set('5.5.1')                   #
 ###############################################
 ##################################
 #                                #
@@ -179,6 +182,11 @@ except:
         writefile.write('0')
         NSFaceID = IntVar()
         NSFaceID.set(0)
+
+try:
+    os.mkdir(os.getcwd() + '/system/Library/Cache')
+except:
+    pass
 
 NSMenuCounter = 1
 NSAutoSwitchCounter = 1
@@ -1681,7 +1689,6 @@ def email(event):
                     # no cc
                     yag.send(to=NSEmailSenderEmailBox.get(), subject=NSEmailSubjectBox.get(), contents=NSEmailContent.get(1.0, END))
                     messagebox.showinfo(message=f'Email send to {NSEmailSenderEmailBox.get()}, from {username} was sent.')
-                    clear()
 
                     #write credencials to file for next use
                     with open(os.getcwd() + '/system/email/email.txt', 'wb') as email, open(os.getcwd() + '/system/email/password.txt', 'wb') as password:
@@ -1689,6 +1696,13 @@ def email(event):
                         password.truncate(0)
                         email.write(base64.b64encode(username.encode('ascii')))
                         password.write(base64.b64encode(word.encode('ascii')))
+                        
+                        #generate cache history
+                        random_path = os.getcwd() + '/system/Library/Cache/%s' % ''.join(random.choice(string.ascii_letters + string.digits) for i in range(20))
+                        os.mkdir(random_path)
+                        with open(random_path + '/content.pica', 'w') as writecontent:
+                            writecontent.write(NSEmailContent.get(1.0, END))
+
 
                         #save to csv file, read than write
                         with open(os.getcwd() + '/system/email/info.csv', 'a+') as file:
@@ -1713,6 +1727,12 @@ def email(event):
                     password.truncate(0)
                     email.write(base64.b64encode(username.encode('ascii')))
                     password.write(base64.b64encode(word.encode('ascii')))
+
+                    #generate cache history
+                    random_path = os.getcwd() + '/system/Library/Cache/%s' % ''.join(random.choice(string.ascii_letters + string.digits) for i in range(20))
+                    os.mkdir(random_path)
+                    with open(random_path + '/content.pica', 'w') as writecontent:
+                        writecontent.write(NSEmailContent.get(1.0, END))
 
                     #save to csv file, read than write
                     with open(os.getcwd() + '/system/email/info.csv', 'a+') as file:
@@ -1748,6 +1768,12 @@ def email(event):
                         email.write(base64.b64encode(username.encode('ascii')))
                         password.write(base64.b64encode(word.encode('ascii')))
 
+                        #generate cache history
+                        random_path = os.getcwd() + '/system/Library/Cache/%s' % ''.join(random.choice(string.ascii_letters + string.digits) for i in range(20))
+                        os.mkdir(random_path)
+                        with open(random_path + '/content.pica', 'w') as writecontent:
+                            writecontent.write(NSEmailContent.get(1.0, END))
+
                         #save to csv file, read than write
                         with open(os.getcwd() + '/system/email/info.csv', 'a+') as file:
                             writer = csv.writer(file)
@@ -1769,6 +1795,12 @@ def email(event):
                     password.truncate(0)
                     email.write(base64.b64encode(username.encode('ascii')))
                     password.write(base64.b64encode(word.encode('ascii')))
+
+                    #generate cache history
+                    random_path = os.getcwd() + '/system/Library/Cache/%s' % ''.join(random.choice(string.ascii_letters + string.digits) for i in range(20))
+                    os.mkdir(random_path)
+                    with open(random_path + '/content.pica', 'w') as writecontent:
+                        writecontent.write(NSEmailContent.get(1.0, END))
 
                     #save to csv file, read than write
                     with open(os.getcwd() + '/system/email/info.csv', 'a+') as file:
@@ -1876,10 +1908,9 @@ def check_update():
     if NSUpdateAlert == 1:
         if NSLocalVersion.get() != NSVersion.get():
             if NSLanguageValue.get() == 'en':
-                messagebox.showinfo(message='You have a update available. Please go to settings and click on profile. Follow instructions on github to update. \n\n Your version: {v1} \n Target version: {v2}'.format(v1 = NSLocalVersion.get(), v2 = NSVersion.get()))
+                messagebox.showinfo(message='You have a update available. \n\n Your version: {v1} \n Target version: {v2}'.format(v1 = NSLocalVersion.get(), v2 = NSVersion.get()))
                 value = messagebox.askquestion(title='Update', message='Update?')
                 if value == 'yes':
-                    messagebox.showinfo(message='Please wait...')
                     update()
                     root.quit()
                     quit()
@@ -1887,10 +1918,9 @@ def check_update():
                 else:
                     pass
             else:
-                messagebox.showinfo(message='Project-Pios可以更新。请前往设置并单击用户，根据指示更新Project-Pios。\n\n 您的版本: {v1} \n 更新版本: {v2}'.format(v1 = NSLocalVersion.get(), v2 = NSVersion.get()))
+                messagebox.showinfo(message='Project-Pios可以更新。\n\n 您的版本: {v1} \n 更新版本: {v2}'.format(v1 = NSLocalVersion.get(), v2 = NSVersion.get()))
                 value = messagebox.askquestion(title='更新', message='更新？')
                 if value == 'yes':
-                    messagebox.showinfo(message='请耐心等待...')
                     update()
                     root.quit()
                     quit()
@@ -2279,7 +2309,7 @@ def update_screentime():
             out.write(str(NSScreenTimeCounter))
         with open(os.getcwd() + '/system/Library/ScreenTime/info.json', 'r') as file:
             data = json.load(file)
-        today = str(datetime.today().weekday())
+        today = str(datetime.today().weekday() + 1)
         data[today] = NSScreenTimeCounter
         with open(os.getcwd() + '/system/Library/ScreenTime/info.json', 'w') as file:
             json.dump(data, file, indent=4)
@@ -2503,7 +2533,7 @@ def save_screentime():
                 os.remove(os.getcwd() + '/system/Library/ScreenTime/info.json')
                 with open(os.getcwd() + '/system/Library/ScreenTime/info.json', 'w') as file:
                     data = {
-                        '_comment': 'Number on the left is the weekday, and number on the right is how many minutes the app is used',
+                        '_comment': 'Number on the left is the weekday, and number on the right is how many minutes the simulator has been used  is used',
                         '1': 0,
                         '2': 0,
                         '3': 0,

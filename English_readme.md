@@ -66,6 +66,9 @@ Change language by changing the language.txt from "zh-cn" to "en".
 
 <a name="version"></a>
 ## Versions
+- **Version 5.5.1**
+   - Launch time is faster by 1.5 seconds
+   - Fixed screen time bugs
 - **Version 5.5**
    - Added gui update
    - Fixed some update bugs
