@@ -14,6 +14,7 @@
       7. [版本](#version)
    </summary>
 </details>
+
 ***
 
 ### 屏幕过于小的电脑不支持
