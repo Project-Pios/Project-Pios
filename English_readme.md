@@ -26,18 +26,11 @@ PC Users is not supported and will not be.
 <a name="install"></a>
 ## Installing an executing
 1. [Download](https://www.python.org/ftp/python/3.9.1/python-3.9.1-macosx10.9.pkg) python3.9
-2. Open Terminal
-3. Run to install homebrew(Copy paste is easier): `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
-4. Run:`brew install blueutil`
-5. Run: `cd Desktop`
-6. Run:`git clone https://github.com/Project-Pios/Project-Pios`
-7. Run:`cd Project-Pios`
-8. Run: `pip3 install -r r.txt` - if errors are generated than run，`pip install -r r.txt`
-9. Run: `mv project_pios ..`
-10. Run: `cd ..`
-11. Run: `rm -rf Project-Pios`
-12. Run: `cd project_pios`
-13. Now start the app:`python3 main.py` - if errors are generated than run，`python main.py`
+2. [Download](https://github.com/Project-Pios/Project-Pios-Installer/raw/main/install.sh) file to Desktop
+3. Open Terminal
+4. Run:`chmod +x install.sh`
+5. Run: `./install.sh`
+6. Finished!
 
 <a name="bugs"></a>
 ## Known Bugs
