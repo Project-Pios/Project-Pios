@@ -26,7 +26,7 @@ PC Users is not supported and will not be.
 <a name="install"></a>
 ## Installing an executing
 1. [Download](https://www.python.org/ftp/python/3.9.1/python-3.9.1-macosx10.9.pkg) python3.9
-2. [Download](https://github.com/Project-Pios/Project-Pios-Installer/raw/main/install.sh) file to Desktop
+2. [Download](https://github.com/Project-Pios/Project-Pios-Installer/raw/main/install.sh) file to Desktop as shell file(.sh)
 3. Open Terminal
 4. Run:`chmod +x install.sh`
 5. Run: `./install.sh`
