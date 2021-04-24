@@ -27,7 +27,7 @@
 <a name="install"></a>
 ## 下载和运行
 1. [下载](https://www.python.org/ftp/python/3.9.1/python-3.9.1-macosx10.9.pkg) python3.9
-4. [下载](https://github.com/Project-Pios/Project-Pios-Installer/raw/main/install.sh)文件到桌面
+4. 用.sh文件后缀[下载](https://github.com/Project-Pios/Project-Pios-Installer/blob/main/install.sh)文件到桌面
 5. 打开终端
 6. 运行：`chmod +x install.sh`
 7. 运行：`./install.sh`
