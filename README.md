@@ -27,18 +27,11 @@
 <a name="install"></a>
 ## 下载和运行
 1. [下载](https://www.python.org/ftp/python/3.9.1/python-3.9.1-macosx10.9.pkg) python3.9
-2. 打开终端
-3. 运行以下载(复制粘贴简单些)：`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
-4. 运行：`brew install blueutil`
-5. 运行：`cd Desktop`
-6. 运行：`git clone https://github.com/Project-Pios/Project-Pios`
-7. 运行：`cd Project-Pios`
-8. 运行： `pip3 install -r r.txt` - 如果出错，运行`pip install -r r.txt`
-9. 运行：`mv project_pios ..`
-10. 运行：`cd ..`
-11. 运行：`rm -rf Project-Pios`
-12. 运行： `cd project_pios`
-13. 所需的模块都下载完了，现在运行：`python3 main.py` - 如果出错，运行`python main.py`
+4. 下载文件到桌面：`https://github.com/Project-Pios/Project-Pios-Installer/raw/main/install.sh`
+5. 打开终端
+6. 运行：`chmod +x install.sh`
+7. 运行：`./install.sh`
+8. 完成！
 
 <a name="bugs"></a>
 ## 已知问题
