@@ -5,13 +5,13 @@
 ## 目录
 <details open="open">
     <summary>目录</summary>
-      1. [Project-Pios百科](https://github.com/Project-Pios/Project-Pios/wiki)
-      2. [下载和运行](#install)
-      3. [已知问题](#bugs)
-      4. [语言](#language)
-      5. [图片介绍](#images)
-      6. [帮手](#helpers)
-      7. [版本](#version)
+      <li>[Project-Pios百科](https://github.com/Project-Pios/Project-Pios/wiki)</li>
+      <li>[下载和运行](#install)</li>
+      <li>[已知问题](#bugs)</li>
+      <li>[语言](#language)</li>
+      <li>[图片介绍](#images)</li>
+      <li>[帮手](#helpers)</li>
+      <li>[版本](#version)</li>
    </summary>
 </details>
 
