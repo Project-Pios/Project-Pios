@@ -3,7 +3,7 @@
 安卓和苹果结合的简单操作系统。 [切换到英文介绍](https://github.com/Project-Pios/Project-Pios/blob/main/English_readme.md)
 
 ## 目录
-<details open="open">
+<details>
     <summary>目录</summary>
       <li>[Project-Pios百科](https://github.com/Project-Pios/Project-Pios/wiki)</li>
       <li>[下载和运行](#install)</li>
