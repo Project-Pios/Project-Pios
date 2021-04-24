@@ -5,13 +5,13 @@ Operating system with python. [Switch to Chinese Readme](https://github.com/Proj
 ## Table of contents
 <details open="open">
     <summary>Table of Contents</summary>
-      1. [Project-Pios Wiki](https://github.com/Project-Pios/Project-Pios/wiki)
-      2. [Installing and executing](#install)
-      3. [Known Bugs](#bugs)
-      4. ['Language'](#language)
-      5. [Images](#images)
-      6. [Add-Ons](#helpers)
-      7. [Versions](#version)
+    <li>[Project-Pios Wiki](https://github.com/Project-Pios/Project-Pios/wiki)</li>
+      <li>[Installing and executing](#install)</li>
+      <li>[Known Bugs](#bugs)</li>
+      <li>['Language'](#language)</li>
+      <li>[Images](#images)</li>
+      <li>[Add-Ons](#helpers)</li>
+      <li>[Versions](#version)</li>
    </summary>
 </details>
 ***
