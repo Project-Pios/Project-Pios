@@ -5,9 +5,9 @@
 ## 目录
 <details>
     <summary>目录</summary>
-      <li>[Project-Pios百科](https://github.com/Project-Pios/Project-Pios/wiki)</li>
-      <li>[下载和运行](#install)</li>
-      <li>[已知问题](#bugs)</li>
+    <li><a onclick="window.location='https://github.com/Project-Pios/Project-Pios/wiki'">Project-Pios百科</a></li>
+    <li><a onclick=</li>
+    <li>[已知问题](#bugs)</li>
       <li>[语言](#language)</li>
       <li>[图片介绍](#images)</li>
       <li>[帮手](#helpers)</li>
