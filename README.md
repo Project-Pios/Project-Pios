@@ -5,7 +5,7 @@
 ## 目录
 <details>
    <summary>目录</summary>
-      <li><a onclick="window.location='https://github.com/Project-Pios/Project-Pios/wiki'">Project-Pios百科</a></li>
+      <li><button onclick="window.location='https://github.com/Project-Pios/Project-Pios/wiki'">Project-Pios百科</button></li>
       <li><a onclick="windows.location.href='#install'">下载和运行</a></li>
       <li>[已知问题](#bugs)</li>
       <li>[语言](#language)</li>
