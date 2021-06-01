@@ -4,14 +4,14 @@
 
 ## 目录
 <details>
-   <summary>目录</summary>
-      <li><button onclick="window.location='https://github.com/Project-Pios/Project-Pios/wiki'">Project-Pios百科</button></li>
-      <li><a onclick="windows.location.href='#install'">下载和运行</a></li>
-      <li>[已知问题](#bugs)</li>
-      <li>[语言](#language)</li>
-      <li>[图片介绍](#images)</li>
-      <li>[帮手](#helpers)</li>
-      <li>[版本](#version)</li>
+    <summary>目录</summary>
+   - [Project-Pios百科](https://github.com/Project-Pios/Project-Pios/wiki)
+   - [下载和运行](#install)
+   -[已知问题](#bugs)
+   - [语言](#language)
+   - [图片介绍](#images)
+   - [帮手](#helpers)
+   - [版本](#version)
    </summary>
 </details>
 
