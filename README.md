@@ -3,17 +3,13 @@
 安卓和苹果结合的简单操作系统。 [切换到英文介绍](https://github.com/Project-Pios/Project-Pios/blob/main/English_readme.md)
 
 ## 目录
-<details>
-    <summary>目录</summary>
-   - [Project-Pios百科](https://github.com/Project-Pios/Project-Pios/wiki)
-   - [下载和运行](#install)
-   -[已知问题](#bugs)
-   - [语言](#language)
-   - [图片介绍](#images)
-   - [帮手](#helpers)
-   - [版本](#version)
-   </summary>
-</details>
+- [Project-Pios百科](https://github.com/Project-Pios/Project-Pios/wiki)
+- [下载和运行](#install)
+- [已知问题](#bugs)
+- [语言](#language)
+- [图片介绍](#images)
+- [帮手](#helpers)
+- [版本](#version)
 
 ***
 
