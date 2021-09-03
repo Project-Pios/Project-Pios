@@ -1,5 +1,5 @@
 <a name="top"></a>
-# Project-pios
+# Project-pios - NO LONGER UPDATED - 不再更新
 安卓和苹果结合的简单操作系统。 [切换到英文介绍](https://github.com/Project-Pios/Project-Pios/blob/main/English_readme.md)
 
 ## 目录
